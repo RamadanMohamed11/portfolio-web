@@ -87067,7 +87067,7 @@ A.yv.prototype={
 ah(){return A.aSa()}}
 A.T8.prototype={
 I(a2){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=10*$.K().gc_(),g=5*$.K().gaX(),f=j.a.c[3],e=A.dp(15),d=$.x2(),c=A.b6("My Skills",i,i,i,A.aY(i,i,i,i,i,i,i,i,i,i,i,$.K().aB(9.5),i,i,B.z,i,i,!0,i,i,i,i,i,i,i,i),i,i),b=A.b2(i,16*$.K().gaX(),i),a=j.a.d,a0=t.p,a1=A.b([],a0)
-for(s=j.d,r=0;r<12;++r){q=s[r]
+for(s=j.d,r=0;r<11;++r){q=s[r]
 p=$.K()
 if(!$.hf().$0())p=1
 else{o=p.d
@@ -87191,7 +87191,7 @@ $0(){this.a.c.$1(0)},
 $S:0}
 A.Nm.prototype={
 I(a){var s,r,q,p,o,n,m,l=null,k=2*$.K().gc_(),j=5*$.K().gaX(),i=this.c[3],h=A.dp(15),g=$.x2(),f=A.b6("My Skills",l,l,l,A.aY(l,l,l,l,l,l,l,l,l,l,l,$.K().aB(16),l,l,B.z,l,l,!0,l,l,l,l,l,l,l,l),l,l),e=A.b2(l,16*$.K().gaX(),l),d=t.p,c=A.b([],d)
-for(s=0;s<12;++s){r=$.K()
+for(s=0;s<11;++s){r=$.K()
 if(!$.hf().$0())r=1
 else{q=r.d
 q===$&&A.a()
@@ -95231,7 +95231,7 @@ $.iA=function(){var s=t.n
 return A.b([A.b([0.41233895,0.35762064,0.18051042],s),A.b([0.2126,0.7152,0.0722],s),A.b([0.01932141,0.11916382,0.95034478],s)],t.zg)}()
 $.ta=A.b([95.047,100,108.883],t.n)
 $.awX=function(){var s="assets/images/s.png",r=t.z
-return A.b([A.ae(["img","assets/images/dart.png","title","Dart"],r,r),A.ae(["img","assets/images/flutter.png","title","Flutter"],r,r),A.ae(["img","assets/images/firebase.png","title","Firebase"],r,r),A.ae(["img","assets/images/api.png","title","RESTful APIs"],r,r),A.ae(["img","assets/images/postman.png","title","Postman"],r,r),A.ae(["img",s,"title","Bloc & Provider"],r,r),A.ae(["img",s,"title","Responsive & Adaptive UI"],r,r),A.ae(["img",s,"title","Hive"],r,r),A.ae(["img",s,"title","SOLID principles"],r,r),A.ae(["img",s,"title","Hive(local databases)"],r,r),A.ae(["img","assets/images/problem.png","title","Problem Solving"],r,r),A.ae(["img","assets/images/Git&GitHub.png","title","Git & GitHub"],r,r)],t.n4)}()
+return A.b([A.ae(["img","assets/images/dart.png","title","Dart"],r,r),A.ae(["img","assets/images/flutter.png","title","Flutter"],r,r),A.ae(["img","assets/images/firebase.png","title","Firebase"],r,r),A.ae(["img","assets/images/api.png","title","RESTful APIs"],r,r),A.ae(["img","assets/images/postman.png","title","Postman"],r,r),A.ae(["img",s,"title","Bloc & Provider"],r,r),A.ae(["img",s,"title","Responsive & Adaptive UI"],r,r),A.ae(["img",s,"title","SOLID principles"],r,r),A.ae(["img",s,"title","Hive(local databases)"],r,r),A.ae(["img","assets/images/problem.png","title","Problem Solving"],r,r),A.ae(["img","assets/images/Git&GitHub.png","title","Git & GitHub"],r,r)],t.n4)}()
 $.ou=4
 $.aGq=null
 $.avO=null
