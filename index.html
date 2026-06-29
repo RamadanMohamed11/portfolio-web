@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramadan Mohamed | Flutter Developer</title>
+  <meta name="description" content="Flutter Developer building scalable cross-platform mobile apps with clean architecture, Firebase and REST integrations, offline-first features, responsive UI, and polished user experiences.">
+  <meta name="keywords" content="Flutter Developer, Mobile App Developer, Dart, Clean Architecture, Firebase, Cross-Platform, Portfolio">
+  <meta name="author" content="Ramadan Mohamed">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ramadan Mohamed | Flutter Developer">
+  <meta property="og:description" content="Flutter Developer building scalable cross-platform mobile apps with clean architecture, Firebase and REST integrations, offline-first features, responsive UI, and polished user experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-image.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ramadan Mohamed | Flutter Developer">
+  <meta name="twitter:description" content="Flutter Developer building scalable cross-platform mobile apps with clean architecture and polished user experiences.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ramadan Mohamed",
+    "jobTitle": "Flutter Developer",
+    "email": "ramadan.work010@gmail.com",
+    "telephone": "+201067911051",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Assiut",
+      "addressCountry": "Egypt"
+    },
+    "url": "#",
+    "sameAs": [],
+    "knowsAbout": ["Flutter", "Dart", "Mobile App Development", "Clean Architecture", "Firebase", "BLoC", "Cross-Platform Development"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__initials">RM</div>
+    <div class="preloader__spinner"></div>
+    <div class="preloader__bar">
+      <div class="preloader__bar-fill"></div>
+    </div>
+    <div class="preloader__text">Loading Experience...</div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="header">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__logo" aria-label="Ramadan Mohamed - Home">
+        <div class="navbar__logo-icon">RM</div>
+        <span class="navbar__logo-text">Ramadan <span>Mohamed</span></span>
+      </a>
+
+      <div class="navbar__links">
+        <a href="#home" class="navbar__link active">Home</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#experience" class="navbar__link">Experience</a>
+        <a href="#certificates" class="navbar__link">Certificates</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </div>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU PANEL & OVERLAY ===== -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mobile-menu__link active">Home</a>
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#skills" class="mobile-menu__link">Skills</a>
+    <a href="#projects" class="mobile-menu__link">Projects</a>
+    <a href="#experience" class="mobile-menu__link">Experience</a>
+    <a href="#certificates" class="mobile-menu__link">Certificates</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero__particles">
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+      <div class="hero__grid-pattern" aria-hidden="true"></div>
+
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <div class="hero__badge reveal" data-reveal="fade">
+            <span class="hero__badge-dot"></span>
+            Available for opportunities
+          </div>
+
+          <h1 class="hero__title reveal" data-reveal="up">
+            Building polished <span class="hero__title-highlight">Flutter apps</span> with clean architecture and <span class="hero__title-accent">real product thinking.</span>
+          </h1>
+
+          <div class="hero__typing-wrapper reveal" data-reveal="up">
+            <span class="hero__typing-prefix">I am a </span>
+            <span class="hero__typing-text" aria-label="Flutter Developer, Mobile App Developer, Clean Architecture Enthusiast"></span>
+            <span class="hero__typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero__description reveal" data-reveal="up">
+            Flutter Developer building scalable cross-platform mobile apps with clean architecture, Firebase/REST integrations, responsive UI, offline-first features, and polished user experiences.
+          </p>
+
+          <div class="hero__cta reveal" data-reveal="up">
+            <a href="#projects" class="btn btn-primary" id="cta-projects">
+              <i class="fa-solid fa-laptop-code"></i>
+              View Projects
+            </a>
+            <a href="assets/cv/ramadan-mohamed-cv.pdf" class="btn btn-secondary" id="cta-cv" download>
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-ghost" id="cta-contact">
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Stats counters -->
+          <div class="hero__counters reveal" data-reveal="up">
+            <div class="counter-item">
+              <div class="counter-item__number" data-target="9" data-suffix="+">0</div>
+              <div class="counter-item__label">Projects</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-item__number" data-target="8">0</div>
+              <div class="counter-item__label">Certificates</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-item__number" data-target="4" data-suffix="+">0</div>
+              <div class="counter-item__label">Years Learning</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-item__number" data-target="5">0</div>
+              <div class="counter-item__label">App Categories</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-reveal="right">
+          <!-- Sohba phone -->
+          <div class="hero__phone-mockup hero__phone-mockup--1" aria-hidden="true">
+            <div class="hero__phone-notch"></div>
+            <img src="assets/images/hero-phone-sohba.jpeg" alt="صحبة App Screen">
+          </div>
+
+          <!-- Al-Bedayah phone -->
+          <div class="hero__phone-mockup hero__phone-mockup--2" aria-hidden="true">
+            <div class="hero__phone-notch"></div>
+            <img src="assets/images/hero-phone-albedayah.webp" alt="البداية App Screen">
+          </div>
+
+          <!-- PayMinder phone -->
+          <div class="hero__phone-mockup hero__phone-mockup--3" aria-hidden="true">
+            <div class="hero__phone-notch"></div>
+            <img src="assets/images/hero-phone-payminder.webp" alt="PayMinder App Screen">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">Get to know me</span>
+          <h2 class="section-header__title">About Me</h2>
+          <div class="section-header__line"></div>
+        </div>
+
+        <div class="about__content">
+          <div class="about__text reveal" data-reveal="left">
+            <p>
+              I'm a <strong>Computer and Control Engineering</strong> graduate from Assiut University, Egypt, with a deep passion for building cross-platform mobile applications. I specialize in <strong>Flutter & Dart</strong>, focusing on clean architecture, scalable code, and polished user experiences.
+            </p>
+            <p class="about__highlight">
+              My engineering background gives me a strong foundation in systems thinking, problem-solving, and performance optimization. I build apps that aren't just functional — they're maintainable, offline-capable, and ready for production scale.
+            </p>
+            <p>
+              From Firebase integrations and REST API connections to RTL localization and offline-first architecture, I bring full-stack mobile thinking to every project I work on.
+            </p>
+          </div>
+
+          <div class="about__cards-grid reveal" data-reveal="right" data-reveal-stagger>
+            <div class="about__card glass-card">
+              <div class="about__card-icon">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <h3 class="about__card-title">Clean Architecture</h3>
+              <p class="about__card-desc">SOLID principles, layered separation, testable and maintainable codebases.</p>
+            </div>
+
+            <div class="about__card glass-card">
+              <div class="about__card-icon">
+                <i class="fa-solid fa-wifi-slash"></i>
+              </div>
+              <h3 class="about__card-title">Offline-First Apps</h3>
+              <p class="about__card-desc">Hive, HydratedBloc, and sync queues for seamless offline experiences.</p>
+            </div>
+
+            <div class="about__card glass-card">
+              <div class="about__card-icon">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <h3 class="about__card-title">Firebase Integration</h3>
+              <p class="about__card-desc">Auth, Firestore, Cloud Functions, Messaging, and Analytics.</p>
+            </div>
+
+            <div class="about__card glass-card">
+              <div class="about__card-icon">
+                <i class="fa-solid fa-language"></i>
+              </div>
+              <h3 class="about__card-title">RTL & Localization</h3>
+              <p class="about__card-desc">Full Arabic support, RTL layouts, and multi-language apps.</p>
+            </div>
+
+            <div class="about__card glass-card">
+              <div class="about__card-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3 class="about__card-title">Responsive UI</h3>
+              <p class="about__card-desc">Adaptive layouts that work beautifully on every screen size.</p>
+            </div>
+
+            <div class="about__card glass-card">
+              <div class="about__card-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3 class="about__card-title">Product-Level Polish</h3>
+              <p class="about__card-desc">Animations, micro-interactions, and pixel-perfect UX design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">My expertise</span>
+          <h2 class="section-header__title">Skills & Technologies</h2>
+          <div class="section-header__line"></div>
+        </div>
+
+        <div class="skills__grid" data-reveal-stagger>
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <h3 class="skill-category__title">Mobile Development</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">Flutter <span class="skill-chip__dot skill-chip__dot--high" title="High Proficiency"></span></span>
+              <span class="skill-chip">Dart <span class="skill-chip__dot skill-chip__dot--high" title="High Proficiency"></span></span>
+              <span class="skill-chip">Cross-Platform <span class="skill-chip__dot skill-chip__dot--high" title="High Proficiency"></span></span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <h3 class="skill-category__title">Architecture & State</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">Clean Architecture <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">SOLID <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">BLoC / Cubit <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Provider <span class="skill-chip__dot skill-chip__dot--mid"></span></span>
+              <span class="skill-chip">Riverpod <span class="skill-chip__dot skill-chip__dot--mid"></span></span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <h3 class="skill-category__title">Backend & Integrations</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">Firebase <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">REST APIs <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">JSON <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Third-Party APIs <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="skill-category__title">Local Storage & Offline</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">Hive <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">SharedPreferences <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">HydratedBloc <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Sync Queues <span class="skill-chip__dot skill-chip__dot--mid"></span></span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+              <h3 class="skill-category__title">UI / UX</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">Responsive UI <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">RTL Support <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Localization <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Animations <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="skill-category__title">Tools</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">Git <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">GitHub <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Postman <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">GoRouter <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">GetIt <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">fl_chart <span class="skill-chip__dot skill-chip__dot--mid"></span></span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card reveal" data-reveal="up">
+            <div class="skill-category__header">
+              <div class="skill-category__icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 class="skill-category__title">Engineering Foundations</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip">C <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">C++ <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Arduino <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+              <span class="skill-chip">Raspberry Pi <span class="skill-chip__dot skill-chip__dot--mid"></span></span>
+              <span class="skill-chip">Python <span class="skill-chip__dot skill-chip__dot--mid"></span></span>
+              <span class="skill-chip">Control Systems <span class="skill-chip__dot skill-chip__dot--high"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">My work</span>
+          <h2 class="section-header__title">Featured Projects</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__subtitle">Real apps built with Flutter, showcasing clean architecture, offline-first design, and polished user experiences.</p>
+        </div>
+
+        <!-- Featured Projects Grid -->
+        <div class="projects__featured">
+          <!-- Sohba - Flagship -->
+          <div class="project-card project-card--flagship reveal" data-reveal="up" data-project-id="sohba">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__image">
+                <img src="assets/images/project-sohba-cover.webp" alt="صحبة App Cover">
+                <div class="project-card__image-overlay">
+                  <span class="project-card__badge">Flagship Project</span>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <span class="chip chip--gradient">Islamic Lifestyle</span>
+                <h3 class="project-card__title">صحبة</h3>
+                <p class="project-card__description">A comprehensive Islamic companion app for daily worship tracking, community accountability, and spiritual growth. Features prayer tracking, social groups, gamification, and full Arabic localization.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">BLoC/Cubit</span>
+                  <span class="tech-chip">Firebase</span>
+                  <span class="tech-chip">Hive</span>
+                  <span class="tech-chip">Clean Architecture</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.ramadandev.sohba" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="fa-brands fa-google-play"></i> Google Play
+                  </a>
+                  <button class="btn btn-ghost btn-sm btn-details" data-project-id="sohba">
+                    Details <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Al-Bedayah -->
+          <div class="project-card reveal" data-reveal="up" data-project-id="albedayah">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__image">
+                <img src="assets/images/project-albedayah-cover.webp" alt="البداية App Cover">
+                <div class="project-card__image-overlay">
+                  <span class="project-card__badge">Education</span>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <span class="chip chip--gradient">Education</span>
+                <h3 class="project-card__title">البداية</h3>
+                <p class="project-card__description">An interactive Arabic learning app for children with letter tracing, speech recognition, and engaging educational UX.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Provider</span>
+                  <span class="tech-chip">Speech-to-Text</span>
+                  <span class="tech-chip">Custom Painter</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.ramadan.arabic_learning_app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="fa-brands fa-google-play"></i> Google Play
+                  </a>
+                  <button class="btn btn-ghost btn-sm btn-details" data-project-id="albedayah">
+                    Details <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PayMinder -->
+          <div class="project-card reveal" data-reveal="up" data-project-id="payminder">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__image">
+                <img src="assets/images/project-payminder-cover.webp" alt="PayMinder App Cover">
+                <div class="project-card__image-overlay">
+                  <span class="project-card__badge">Finance</span>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <span class="chip chip--gradient">Finance & Utility</span>
+                <h3 class="project-card__title">PayMinder</h3>
+                <p class="project-card__description">A smart payment reminder and financial tracking app with offline-first architecture and intelligent notifications.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">BLoC/Cubit</span>
+                  <span class="tech-chip">Hive</span>
+                  <span class="tech-chip">Clean Architecture</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.ramadan.payminder" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="fa-brands fa-google-play"></i> Google Play
+                  </a>
+                  <button class="btn btn-ghost btn-sm btn-details" data-project-id="payminder">
+                    Details <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Tracker -->
+          <div class="project-card reveal" data-reveal="up" data-project-id="jobtracker">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__image">
+                <img src="assets/images/project-jobtracker-cover.webp" alt="Job Tracker App Cover">
+                <div class="project-card__image-overlay">
+                  <span class="project-card__badge">Productivity</span>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <span class="chip chip--gradient">Productivity & AI</span>
+                <h3 class="project-card__title">Job Tracker</h3>
+                <p class="project-card__description">An AI-powered job application tracker with smart organization, status tracking, and productivity analytics.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Riverpod</span>
+                  <span class="tech-chip">Firebase</span>
+                  <span class="tech-chip">REST APIs</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.ramadanmohamed.jobtracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="fa-brands fa-google-play"></i> Google Play
+                  </a>
+                  <button class="btn btn-ghost btn-sm btn-details" data-project-id="jobtracker">
+                    Details <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supporting Projects -->
+        <h3 class="projects__supporting-title reveal" data-reveal="up">More Projects</h3>
+        <div class="projects__supporting reveal" data-reveal="up" data-reveal-stagger>
+          <div class="project-card project-card--small" data-project-id="social-media">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__content">
+                <span class="chip">Social</span>
+                <h3 class="project-card__title">Social Media App</h3>
+                <p class="project-card__description">Feature-rich social media application with real-time feeds and messaging.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Firebase</span>
+                  <span class="tech-chip">BLoC</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://github.com/RamadanMohamed11/Social-Media" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card project-card--small" data-project-id="attendance">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__content">
+                <span class="chip">Management</span>
+                <h3 class="project-card__title">Student Attendance System</h3>
+                <p class="project-card__description">Comprehensive attendance management with reporting and analytics.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Firebase</span>
+                  <span class="tech-chip">Provider</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card project-card--small" data-project-id="dashboard">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__content">
+                <span class="chip">UI/UX</span>
+                <h3 class="project-card__title">Responsive Dashboard</h3>
+                <p class="project-card__description">Adaptive design dashboard showcasing advanced Flutter layouts.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Responsive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card project-card--small" data-project-id="portfolio-flutter">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__content">
+                <span class="chip">Personal</span>
+                <h3 class="project-card__title">Portfolio (Flutter)</h3>
+                <p class="project-card__description">Cross-platform portfolio app built with Dart & Flutter.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Dart</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://github.com/RamadanMohamed11/MyPortfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card project-card--small" data-project-id="slogan-app">
+            <div class="project-card__inner glass-card">
+              <div class="project-card__content">
+                <span class="chip">Creative</span>
+                <h3 class="project-card__title">Slogan App</h3>
+                <p class="project-card__description">Creative slogan generator with beautiful typography.</p>
+                <div class="project-card__tech">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Dart</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://github.com/RamadanMohamed11/Slogan-App" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOHBA CASE STUDY ===== -->
+    <section class="case-study" id="sohba-case-study">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">Deep dive</span>
+          <h2 class="section-header__title">صحبة Case Study</h2>
+          <div class="section-header__line"></div>
+        </div>
+
+        <div class="case-study__intro reveal" data-reveal="up">
+          <p>The story behind building a comprehensive Islamic companion app from concept to production.</p>
+        </div>
+
+        <div class="case-study__timeline">
+          <!-- Problem -->
+          <div class="case-study__item reveal" data-reveal="left">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">01</span>
+              <h3 class="case-study__card-title">The Problem</h3>
+              <p class="case-study__card-desc">Muslims often struggle to maintain consistent worship habits in isolation. Existing apps focus on individual tracking but miss the power of community accountability — the concept of "Sohba" (companionship) in Islamic tradition.</p>
+            </div>
+          </div>
+
+          <!-- Solution -->
+          <div class="case-study__item reveal" data-reveal="right">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">02</span>
+              <h3 class="case-study__card-title">The Solution</h3>
+              <p class="case-study__card-desc">صحبة combines personal worship tracking with social accountability groups. Users can join groups, track prayers together, compete on leaderboards, and encourage each other — making spiritual growth a shared journey.</p>
+            </div>
+          </div>
+
+          <!-- Core Features -->
+          <div class="case-study__item reveal" data-reveal="left">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">03</span>
+              <h3 class="case-study__card-title">Core Features</h3>
+              <div class="case-study__card-desc">
+                <ul style="margin-left: 20px; list-style-type: disc;">
+                  <li>Prayer tracking with streaks, badges, and gamified prayer garden</li>
+                  <li>Social accountability groups with leaderboards</li>
+                  <li>Smart reminders and push notifications</li>
+                  <li>Quran & Azkar reader</li>
+                  <li>Qibla compass and prayer times</li>
+                  <li>Group chat and messaging</li>
+                  <li>Admin metrics dashboard</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div class="case-study__item reveal" data-reveal="right">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">04</span>
+              <h3 class="case-study__card-title">Architecture</h3>
+              <p class="case-study__card-desc">Built with <strong>Clean Architecture</strong> — presentation, domain, and data layers fully separated. State managed with <strong>BLoC/Cubit</strong> pattern. Navigation via <strong>GoRouter</strong>. Dependency injection with <strong>GetIt</strong>.</p>
+            </div>
+          </div>
+
+          <!-- Offline Strategy -->
+          <div class="case-study__item reveal" data-reveal="left">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">05</span>
+              <h3 class="case-study__card-title">Offline Strategy</h3>
+              <p class="case-study__card-desc">Offline-first architecture using <strong>Hive</strong> for structured local storage, <strong>SharedPreferences</strong> for settings, and custom <strong>sync queues</strong> that batch and push changes when connectivity returns. Users never lose their worship data.</p>
+            </div>
+          </div>
+
+          <!-- UI/Experience -->
+          <div class="case-study__item reveal" data-reveal="right">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">06</span>
+              <h3 class="case-study__card-title">UI & Experience</h3>
+              <p class="case-study__card-desc">Full <strong>Arabic localization</strong> with <strong>RTL-friendly UI</strong>. Every screen designed for right-to-left reading flow. Beautiful animations, smooth transitions, and intuitive navigation make the app feel premium and respectful of its users' spiritual context.</p>
+            </div>
+          </div>
+
+          <!-- Impact -->
+          <div class="case-study__item reveal" data-reveal="left">
+            <div class="case-study__card glass-card">
+              <span class="case-study__step">07</span>
+              <h3 class="case-study__card-title">Impact</h3>
+              <p class="case-study__card-desc">صحبة demonstrates full product lifecycle capability — from concept and architecture decisions through offline data strategy, localization, gamification, and community features. It represents the most technically ambitious and feature-rich project in this portfolio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">My journey</span>
+          <h2 class="section-header__title">Experience & Volunteering</h2>
+          <div class="section-header__line"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal" data-reveal="left">
+            <div class="timeline__date">Jan 2026 — Present</div>
+            <div class="timeline__card glass-card">
+              <h3 class="timeline__role">Computer & Control Engineer</h3>
+              <span class="timeline__org">New Dirout Group of Regulators Project — RGBS</span>
+              <p class="timeline__desc">Working on the New Dirout Group of Regulators project, applying control engineering principles and embedded systems expertise to real-world industrial systems.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" data-reveal="right">
+            <div class="timeline__date">Jan 2025 — May 2025</div>
+            <div class="timeline__card glass-card">
+              <h3 class="timeline__role">AC Head — Robotics Team</h3>
+              <span class="timeline__org">University Robotics Team</span>
+              <p class="timeline__desc">Led the AC (Academic Committee) division, mentoring junior members in embedded systems, ROS, Raspberry Pi, computer vision, and C/C++ programming. Coordinated competition preparation and technical training.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" data-reveal="left">
+            <div class="timeline__date">Oct 2023 — Jan 2025</div>
+            <div class="timeline__card glass-card">
+              <h3 class="timeline__role">AC Member — Robotics Team</h3>
+              <span class="timeline__org">University Robotics Team</span>
+              <p class="timeline__desc">Contributed to robotics projects involving Arduino, C programming, hardware integration, and competition readiness. Built hands-on experience with embedded systems and team collaboration.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" data-reveal="right">
+            <div class="timeline__date">Sep 2021 — Jul 2025</div>
+            <div class="timeline__card glass-card">
+              <h3 class="timeline__role">AC Member — ASME Team</h3>
+              <span class="timeline__org">ASME Student Chapter</span>
+              <p class="timeline__desc">Active member of the ASME student chapter, participating in engineering projects, workshops, and technical events that strengthened project execution and cross-disciplinary skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATES SECTION ===== -->
+    <section class="certificates" id="certificates">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">Continuous learning</span>
+          <h2 class="section-header__title">Certificates & Training</h2>
+          <div class="section-header__line"></div>
+        </div>
+
+        <div class="certificates__grid" data-reveal-stagger>
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Deep Dive into Clean Architecture in Flutter</h3>
+              <span class="certificate-card__issuer">Udemy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Eng. Tharwat Samy</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> November 2025</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Flutter Advanced Course — BLoC & MVVM Pattern</h3>
+              <span class="certificate-card__issuer">Udemy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Eng. Tharwat Samy</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> September 2025</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Mastering Flutter Responsive & Adaptive UI Design</h3>
+              <span class="certificate-card__issuer">Udemy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Eng. Tharwat Samy</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> August 2025</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Complete Flutter & Dart Development Course</h3>
+              <span class="certificate-card__issuer">Udemy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Eng. Tharwat Samy</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> October 2024</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Flutter Development Course</h3>
+              <span class="certificate-card__issuer">Easy Learn Academy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Academy Instructors</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> September 2024</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Best Team Competition</h3>
+              <span class="certificate-card__issuer">Easy Learn Academy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Academy Panel</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> June 2024</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Dart & OOP</h3>
+              <span class="certificate-card__issuer">Udemy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Eng. Usama Elgendy</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> April 2024</span>
+            </div>
+          </div>
+
+          <div class="certificate-card glass-card reveal" data-reveal="up">
+            <div class="certificate-card__accent"></div>
+            <div class="certificate-card__body">
+              <div class="certificate-card__ribbon">🏆</div>
+              <h3 class="certificate-card__name">Git & GitHub</h3>
+              <span class="certificate-card__issuer">Udemy</span>
+              <span class="certificate-card__instructor">Instructor: <span>Eng. Tharwat Samy</span></span>
+              <span class="certificate-card__date"><i class="fa-regular fa-calendar-days"></i> April 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">Academic background</span>
+          <h2 class="section-header__title">Education</h2>
+          <div class="section-header__line"></div>
+        </div>
+
+        <div class="education__card glass-card reveal" data-reveal="up">
+          <div class="education__icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="education__details">
+            <h3 class="education__degree">Bachelor of Computer and Control Engineering</h3>
+            <span class="education__university">Assiut University, Egypt</span>
+            <span class="education__date"><i class="fa-regular fa-calendar-days"></i> October 2020 — July 2025</span>
+            <div class="education__grade">
+              Grade: <strong>83%</strong>
+            </div>
+            <p class="education__description">Comprehensive engineering program covering programming (C, C++, Python), control systems, embedded technologies (Arduino, Raspberry Pi), and software engineering fundamentals. These foundations power my approach to structured, maintainable mobile development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span class="section-header__label">Get in touch</span>
+          <h2 class="section-header__title">Let's Build Something Great</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        </div>
+
+        <div class="contact__inner">
+          <div class="contact__info reveal" data-reveal="left">
+            <h3 class="contact__info-title">Contact Information</h3>
+            <p class="contact__info-subtitle">Reach out via any of these channels or submit the form.</p>
+
+            <div class="contact__items">
+              <div class="contact__item glass-card">
+                <div class="contact__item-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="contact__item-label">Email</span>
+                  <span class="contact__item-value"><a href="mailto:ramadan.work010@gmail.com">ramadan.work010@gmail.com</a></span>
+                </div>
+              </div>
+
+              <div class="contact__item glass-card">
+                <div class="contact__item-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <span class="contact__item-label">Phone / WhatsApp</span>
+                  <span class="contact__item-value"><a href="https://wa.me/201067911051">+20 106 791 1051</a></span>
+                </div>
+              </div>
+
+              <div class="contact__item glass-card">
+                <div class="contact__item-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="contact__item-label">Location</span>
+                  <span class="contact__item-value">Assiut, Egypt</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__socials">
+              <a href="#" class="contact__social-link" aria-label="LinkedIn" data-status="coming-soon">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="#" class="contact__social-link" aria-label="GitHub" data-status="coming-soon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://wa.me/201067911051" class="contact__social-link" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper reveal" data-reveal="right">
+            <form class="contact__form glass-card contact-form" id="contact-form">
+              <div class="form-group" style="margin-bottom: var(--sp-4);">
+                <label for="contact-name" style="display: block; margin-bottom: var(--sp-2); font-size: var(--fs-sm); color: var(--clr-text-secondary);">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="John Doe" required autocomplete="name" style="width: 100%; padding: var(--sp-3); background: var(--clr-bg-input); border: 1px solid var(--clr-border-input); border-radius: var(--radius-md); color: var(--clr-text-primary); transition: all var(--tr-fast);">
+              </div>
+              <div class="form-group" style="margin-bottom: var(--sp-4);">
+                <label for="contact-email" style="display: block; margin-bottom: var(--sp-2); font-size: var(--fs-sm); color: var(--clr-text-secondary);">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required autocomplete="email" style="width: 100%; padding: var(--sp-3); background: var(--clr-bg-input); border: 1px solid var(--clr-border-input); border-radius: var(--radius-md); color: var(--clr-text-primary); transition: all var(--tr-fast);">
+              </div>
+              <div class="form-group" style="margin-bottom: var(--sp-6);">
+                <label for="contact-message" style="display: block; margin-bottom: var(--sp-2); font-size: var(--fs-sm); color: var(--clr-text-secondary);">Your Message</label>
+                <textarea id="contact-message" name="message" placeholder="Tell me about your project..." rows="5" required style="width: 100%; padding: var(--sp-3); background: var(--clr-bg-input); border: 1px solid var(--clr-border-input); border-radius: var(--radius-md); color: var(--clr-text-primary); transition: all var(--tr-fast); resize: vertical;"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="contact-submit" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+              <p class="form-note" style="font-size: var(--fs-xs); color: var(--clr-text-muted); margin-top: var(--sp-3); text-align: center;">This will open your email client with a pre-filled message.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <a href="#home" class="footer__brand-logo" aria-label="Back to top">
+          <div class="footer__brand-logo-icon">RM</div>
+          <span class="footer__brand-name">Ramadan <span>Mohamed</span></span>
+        </a>
+        <p class="footer__brand-desc">Flutter Developer building scalable cross-platform mobile apps with clean architecture.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://wa.me/201067911051" class="footer__social-link" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__nav-title">Quick Links</h4>
+        <ul>
+          <li><a href="#about" class="footer__nav-link">About</a></li>
+          <li><a href="#skills" class="footer__nav-link">Skills</a></li>
+          <li><a href="#projects" class="footer__nav-link">Projects</a></li>
+          <li><a href="#experience" class="footer__nav-link">Experience</a></li>
+          <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__cta">
+        <h4 class="footer__cta-title">Let's Connect</h4>
+        <p class="footer__cta-desc">Interested in working together? Get in touch and let's make something amazing.</p>
+        <a href="assets/cv/ramadan-mohamed-cv.pdf" class="btn btn-secondary btn-sm" download style="margin-top: var(--sp-2);">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom container">
+      <div class="footer__copyright">&copy; 2025 Ramadan Mohamed. All rights reserved.</div>
+      <div class="footer__bottom-links">
+        <span class="footer__bottom-link">Designed with ❤️ for Mobile-First experiences.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== PROJECT DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal glass-card">
+      <div class="modal__header">
+        <h3 class="modal__title" id="modal-title">Project Details</h3>
+        <button class="modal__close" id="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal__body" id="modal-body">
+        <!-- Dynamically populated by main.js -->
+      </div>
+      <div class="modal__footer" id="modal-footer">
+        <!-- Dynamically populated by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/main.js"></script>
+</body>
+</html>
